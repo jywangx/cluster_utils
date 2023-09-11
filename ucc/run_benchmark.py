@@ -30,7 +30,7 @@ cl_basic_env = "-x UCC_CL_BASIC_TLS=ucp,sharp -x UCC_CLS=basic "
 basic_inter_env = [
     "-x UCC_TL_SHARP_TUNE=0 ",
     "-x UCC_TL_SHARP_DEVICES=mlx5_2:1 -x UCC_TL_SHARP_TUNE=reduce_scatter:0-inf -x SHARP_COLL_ENABLE_SAT=0 -x UCC_TL_SHARP_RS_SWITCH_THERSH=" + str(end_count) + " ",
-    "-x UCC_TL_SHARP_DEVICES=mlx5_2:1 -x UCC_TL_SHARP_TUNE=reduce_scatter:0-inf -x SHARP_COLL_ENABLE_SAT=1 -x UCC_TL_SHARP_RS_SWITCH_THERSH=256 ",
+    "-x UCC_TL_SHARP_DEVICES=mlx5_2:1 -x UCC_TL_SHARP_TUNE=reduce_scatter:0-inf -x SHARP_COLL_ENABLE_SAT=1 -x SHARP_COLL_SAT_THRESHOLD=1 -x UCC_TL_SHARP_RS_SWITCH_THERSH=256 ",
     "-x UCC_TL_SHARP_DEVICES=mlx5_2:1 -x UCC_TL_SHARP_TUNE=reduce_scatter:0-inf -x SHARP_COLL_ENABLE_SAT=1 -x UCC_TL_SHARP_RS_SWITCH_THERSH=" + str(end_count) + " "
 ]
 
